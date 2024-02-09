@@ -1,5 +1,5 @@
-import '0-hellofunc.dart';
+import '1-concat_strings.dart';
 
 void main() {
-  helloFunction("Holberton");
+  print(concatStr("Holberton", "School"));
 }
