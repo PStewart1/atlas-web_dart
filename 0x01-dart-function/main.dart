@@ -1,5 +1,7 @@
-import '1-concat_strings.dart';
+import '2-sumfunc.dart';
 
-void main() {
-  print(concatStr("Holberton", "School"));
+void main(List<String> args) {
+  var a = int.parse(args[0]);
+  var b = int.parse(args[1]);
+  print(showFunc(a, b));
 }
