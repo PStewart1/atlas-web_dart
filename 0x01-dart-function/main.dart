@@ -1,7 +1,7 @@
-import '9-palindrome.dart';
+import '10-longest-palindrome.dart';
 
 main() {
-  print(isPalindrome("aa"));
-  print(isPalindrome("abcba"));
-  print(isPalindrome("abcde"));
+  print(longestPalindrome("abcde"));
+  print(longestPalindrome("azeghjhg"));
+  print(longestPalindrome("aaabvf"));
 }
