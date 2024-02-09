@@ -1,7 +1,5 @@
-import '3-factors.dart';
+import '4-outer_inner.dart';
 
 void main() {
-  print(fact(0));
-  print(fact(1));
-  print(fact(5));
+  outer("Youssef Belhadj", "001");
 }
