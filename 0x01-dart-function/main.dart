@@ -1,5 +1,7 @@
-import '4-outer_inner.dart';
+import '6-convert-to-fahrenheit.dart';
 
-void main() {
-  outer("Youssef Belhadj", "001");
+main() {
+  print(convertToF([25, 26, 23, 27, 30]));
+  print(convertToF([22.5, 26, 27.3, 23.6, 25]));
+  print(convertToF([-4.2, -2, 0.5, -5, -1.7]));
 }
