@@ -1,2 +1,2 @@
 # atlas-web_dart
-Learning about the Drt programming language
+Learning about the Dart programming language
