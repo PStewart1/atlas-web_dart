@@ -1,7 +1,7 @@
-import '2-sumfunc.dart';
+import '3-factors.dart';
 
-void main(List<String> args) {
-  var a = int.parse(args[0]);
-  var b = int.parse(args[1]);
-  print(showFunc(a, b));
+void main() {
+  print(fact(0));
+  print(fact(1));
+  print(fact(5));
 }
