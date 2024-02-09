@@ -1,8 +1,7 @@
-import '7-basketball-shots.dart';
+import '8-longest-unique-substring.dart';
 
 main() {
-  var teamA = {'Free throws' : 23, '2 pointers' : 32, '3 pointers': 16};
-  var teamB = {'Free throws' : 31, '2 pointers' : 27, '3 pointers': 13};
-
-  print(whoWins(teamA, teamB));
+  print(longestUniqueSubstring("abcacbd"));
+  print(longestUniqueSubstring("aaaaaaaa"));
+  print(longestUniqueSubstring("abcde"));
 }
