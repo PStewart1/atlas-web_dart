@@ -1,5 +1,7 @@
-import '4-outer_inner.dart';
+import '5-calculate-area.dart';
 
-void main() {
-  outer("Youssef Belhadj", "001");
+main() {
+  print(calculateArea(20,7));
+  print(calculateArea(10,7));
+  print(calculateArea(8.5,3.7));
 }
