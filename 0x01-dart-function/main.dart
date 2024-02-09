@@ -1,7 +1,7 @@
-import '8-longest-unique-substring.dart';
+import '9-palindrome.dart';
 
 main() {
-  print(longestUniqueSubstring("abcacbd"));
-  print(longestUniqueSubstring("aaaaaaaa"));
-  print(longestUniqueSubstring("abcde"));
+  print(isPalindrome("aa"));
+  print(isPalindrome("abcba"));
+  print(isPalindrome("abcde"));
 }
