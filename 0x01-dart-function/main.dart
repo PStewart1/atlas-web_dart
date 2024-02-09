@@ -1,7 +1,8 @@
-import '6-convert-to-fahrenheit.dart';
+import '7-basketball-shots.dart';
 
 main() {
-  print(convertToF([25, 26, 23, 27, 30]));
-  print(convertToF([22.5, 26, 27.3, 23.6, 25]));
-  print(convertToF([-4.2, -2, 0.5, -5, -1.7]));
+  var teamA = {'Free throws' : 23, '2 pointers' : 32, '3 pointers': 16};
+  var teamB = {'Free throws' : 31, '2 pointers' : 27, '3 pointers': 13};
+
+  print(whoWins(teamA, teamB));
 }
