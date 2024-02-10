@@ -1,10 +1,10 @@
-/// Basic user class. contains a late string [name], and [toJson].
+/// Basic user class. contains [name], [age], [height], and [toJson].
 class User {
-  /// A name.
+  /// [User]'s name.
   String name;
-
+  /// [User]'s age 
   int age;
-
+  /// [User]'s height
   double height;
 
   User({required this.name, required this.age, required this.height});
