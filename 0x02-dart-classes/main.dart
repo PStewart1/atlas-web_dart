@@ -1,7 +1,6 @@
-import '0-class.dart';
+import '1-usertojson.dart';
 
 void main() {
-  final firstPer = User();
-  firstPer.name = "Youssef Belhadj";
-  print(firstPer.showName());
+  final user = User(name: "Youssef", age: 25, height: 1.89);
+  print(user.toJson());
 }
