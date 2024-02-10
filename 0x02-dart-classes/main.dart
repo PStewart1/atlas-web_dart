@@ -1,6 +1,17 @@
-import '1-usertojson.dart';
+import '2-password.dart';
 
 void main() {
-  final user = User(name: "Youssef", age: 25, height: 1.89);
-  print(user.toJson());
+  final ps = Password();
+  ps.password = "Just3z";
+  if (ps.isValid() == true)
+    print("${ps.password} is a Valid Password");
+  else
+    print("${ps.password} is Not a Valid Password");
+  print("${ps.toString()}");
+  ps.password = "ShouldWorkf7ne";
+  if (ps.isValid() == true)
+    print("${ps.password} is a Valid Password");
+  else
+    print("${ps.password} is Not a Valid Password");
+  print("${ps.toString()}");
 }
