@@ -1,6 +1,5 @@
-import '1-get_user_id.dart';
-
+import '2-get_user.dart';
 
 main() async {
-  print(await getUserId());
+  getUser();
 }
