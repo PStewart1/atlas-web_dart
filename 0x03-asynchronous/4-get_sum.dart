@@ -5,7 +5,7 @@ import 'dart:convert';
 Future<double> calculateTotal() async {
   try {
     // fetchUserData returns a string in json format, but we only want the id
-    String str = await fetchUserData();
+    var str = await fetchUserData();
     // so we must convert it to a map, in order to easily call it's individual values.
     Map<String, dynamic> userMap = jsonDecode(str);
     // then we can easily extract the id
@@ -19,9 +19,9 @@ Future<double> calculateTotal() async {
     // a forEach loop wont work as it isn't async, but a for-in loop can be.
     for (var item in orderList) {
       // now we can retrieve the price for each order, 
-      String priceStr = await fetchProductPrice(item);
+      var priceStr = await fetchProductPrice(item);
       // and add it to our total.
-      total += double.parse(priceStr);
+      total += jsonDecode(priceStr);
     };
     // Done and done.
     return total; 
