@@ -12,8 +12,8 @@ Future<double> calculateTotal() async {
     String id = userMap['id'];
     // and use it to retrieve the user's orders
     String orders = await fetchUserOrders(id);
-    // which returns a list, in string form, so again we must convert it to a list of strings.
-    List<String> orderList = json.decode(orders).cast<String>();
+    // which returns a list, in string form, so again we must convert it to a list
+    var orderList = jsonDecode(orders);
     // then we prepare our total price tally
     double total = 0;
     // a forEach loop wont work as it isn't async, but a for-in loop can be.
