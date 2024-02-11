@@ -12,7 +12,7 @@ class Password {
   /// checks if the password is the correct length, has upppercase, lowercase, and a number.
   bool isValid() { 
     if (_password.length >= 8 && _password.length <= 16) {
-      RegExp exp = RegExp(r"[A-Z]+[a-z]+\d+");
+      RegExp exp = RegExp(r"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$");
       return exp.hasMatch(_password);
     }
     return false;
