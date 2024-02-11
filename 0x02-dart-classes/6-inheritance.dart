@@ -31,6 +31,6 @@ class User extends Password{
   }
   /// a custom toString message
   @override
-  String toString() => 'User(id : $id ,name: $name, age: $age, height: $height, Password: ${isValid()}';
+  String toString() => 'User(id : $id ,name: $name, age: $age, height: $height, Password: ${isValid()})';
 }
 
