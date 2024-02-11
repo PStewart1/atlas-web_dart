@@ -7,7 +7,7 @@ Future<double> calculateTotal() async {
     // fetchUserData returns a string in json format, but we only want the id
     var str = await fetchUserData();
     // so we must convert it to a map, in order to easily call it's individual values.
-    Map<String, dynamic> userMap = jsonDecode(str);
+    var userMap = jsonDecode(str);
     // then we can easily extract the id
     String id = userMap['id'];
     // and use it to retrieve the user's orders
