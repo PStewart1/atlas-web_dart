@@ -2,7 +2,7 @@ import '4-util.dart';
 import 'dart:convert';
 /// Returns the total price of the user's order.
 /// Calls [fetchUserData], [fetchUserOrders], and [fetchProductPrice].
-Future<double> calculateTotal() async {
+Future<num> calculateTotal() async {
   try {
     // fetchUserData returns a string in json format, but we only want the id
     var str = await fetchUserData();
